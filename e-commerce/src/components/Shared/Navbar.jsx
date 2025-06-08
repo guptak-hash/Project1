@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout, selectCurrentToken } from '../../features/auth/authSlice';
 import { selectCartItems } from '../../features/cart/cartSlice';
+import '../../styles/Navbar.css'
 
 const Navbar = () => {
   const token = useSelector(selectCurrentToken);

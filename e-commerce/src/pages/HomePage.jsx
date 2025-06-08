@@ -1,3 +1,5 @@
+import Navbar from "../components/Shared/Navbar"
+
 const HomePage=()=>{
     return (
         <div>

@@ -1,8 +1,10 @@
+// pages/Auth/RegisterPage.jsx
+
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { register } from '../../features/auth/authSlice';
-import './Auth.css'; // Shared with LoginPage
+import '../../styles/RegisterPage.css'; // Shared with LoginPage
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({

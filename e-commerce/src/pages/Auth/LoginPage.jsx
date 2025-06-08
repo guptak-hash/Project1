@@ -1,8 +1,10 @@
+// pages/Auth/LoginPage.jsx
+
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../../features/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
-import './Auth.css';
+import '../../styles/LoginPage.css';
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
@@ -46,3 +48,5 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+

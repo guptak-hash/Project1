@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+// pages/ProductDetailsPage.jsx
+
+import { useEffect,useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProductDetails } from '../../api/productsAPI';
-import { addToCart } from '../../features/cart/cartSlice';
-import { selectCurrentToken } from '../../features/auth/authSlice';
-import './ProductDetails.css';
+import { fetchProductDetails } from '../api/productsAPI';
+import { addToCart } from '../features/cart/cartSlice';
+import { selectCurrentToken } from '../features/auth/authSlice';
+import '../styles/ProductDetailsPage.css';
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
