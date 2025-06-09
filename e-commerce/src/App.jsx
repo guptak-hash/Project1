@@ -14,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+         {/* Public routes */}
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/login" element={<LoginPage />} />

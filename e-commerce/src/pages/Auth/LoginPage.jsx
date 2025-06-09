@@ -15,7 +15,9 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await dispatch(login(credentials)).unwrap();
+      // .unwrap() is a Redux Toolkit method used with dispatch when working with asynchronous thunks
+      // it returns a Promise
+      await dispatch(login(credentials)).unwrap(); 
       navigate('/');
     } catch (err) {
       setError('Invalid email or password');

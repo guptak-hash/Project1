@@ -19,7 +19,7 @@ const ProductsPage = () => {
 
     useEffect(() => {
         if (status === 'idle') {
-            dispatch(fetchAllProducts());
+            dispatch(fetchAllProducts());  // Triggers API call
         }
     }, [status, dispatch]);
 

@@ -6,8 +6,8 @@ import productsReducer from '../features/products/productsSlice';
 
 export const store = configureStore({
   reducer: {
-    auth: authReducer,
-    cart: cartReducer,
-    products: productsReducer,
+    auth: authReducer,  // Handles user authentication
+    cart: cartReducer,   // Manages shopping cart
+    products: productsReducer,   // Manages product data
   },
 });
