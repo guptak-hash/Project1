@@ -4,6 +4,11 @@
       "email": "guptakishan1123@gmail.com",
       "password": "kishan@123",
       "id": 1
+    },
+    {
+      "email": "peter@gmail.com",
+      "password": "peter@123",
+      "id": 2
     }
   ]
 }

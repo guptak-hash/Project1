@@ -6,6 +6,7 @@ const API_URL = 'http://localhost:3001/users'; // JSON Server
 
 export const registerUser = async (userData) => {
   const response = await axios.post(API_URL, userData);
+  console.log('response >> ',response)
   return { user: response.data, token: 'dummy_token' };
 };
 

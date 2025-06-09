@@ -33,7 +33,7 @@ const ProductDetailsPage = () => {
 
   const handleAddToCart = () => {
     if (!token) {
-      navigate('/login', { state: { from: `/products/${id}` } });
+      navigate('/login');
       return;
     }
     dispatch(addToCart(product));
