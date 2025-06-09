@@ -40,7 +40,7 @@ const RegisterPage = () => {
       })).unwrap();
       
       // Redirect on successful registration
-      navigate('/');
+      navigate('/login');
     } catch (err) {
       setError(err.message || 'Registration failed');
     }
